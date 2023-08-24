@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: white;
+    background-color: #1c2230;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*-------- Background Image --------*/
+.container {
+    background-image: url('https://drive.google.com/uc?export=view&id=1sQI2HUNYjUuZA1M4uUDGGIVoEs87UBB_');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+    background-size: cover;
+}
+
+/*----- header Logo and footer Logo -----*/
+.main-logo {
+    width: 120px;
+    height: auto;
+}
+
+/*-------- Header --------*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+nav ul {
+    display: flex;
+    gap: 50px;
+}
+nav a,
+li {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+/*-------- First --------*/
+.first {
+    display: flex;
+    justify-content: center;
+}
+.first_illus {
+    width: 500px;
+    height: 350px;
+    object-fit: cover;
+}
+
+/*-------- Second --------*/
+.second {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+}
+.second h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.second button {
+    margin-top: 20px;
+    background: linear-gradient(90deg, #6bd4e1, #339cb9);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 50px;
+    color: white;
+    font-size: 10px;
+}
+.second button:hover {
+    background: #21293c;
+    color: white;
+    transition: ease-in-out;
+    box-shadow: 0 0 9px 1px #0e0e0e;
+}
+.second_illus {
+    width: 400px;
+    height: 350px;
+}
+
+/*-------- Third --------*/
+.third {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 400px 400px;
+    text-align: center;
+    gap: 100px;
+}
+.icon {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+}
+.icon h4 {
+    font-size: 20px;
+}
+
+/*-------- Forth --------*/
+.forth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 900px;
+    margin: auto;
+    margin-top: 40px;
+}
+.forth h4 {
+    font-size: 30px;
+}
+.forth p {
+    margin: 20px 0;
+}
+
+/*-------- Fifth --------*/
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.review_icon {
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-bottom: -50px;
+}
+.review_pic {
+    border-radius: 100px;
+    width: 40px;
+    height: auto;
+}
+.fifth {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.review {
+    width: 310px;
+    height: auto;
+    padding: 20px;
+    background-color: #21293c;
+    box-shadow: 3px 3px 3px -5px #0e0e0e;
+    margin-bottom: 100px;
+}
+
+/*-------- Sixth --------*/
+.sixth {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    background-color: #1c2230;
+    box-shadow: 3px 3px 3px 0px #0e0e0e;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -50px;
+}
+.start h4 {
+    font-size: 20px;
+}
+.start p {
+    margin: 15px 0;
+}
+.start input {
+    background-color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    width: 250px;
+}
+.start button {
+    background: linear-gradient(90deg, #6bd4e1, #339cb9);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: white;
+}
+.start button:hover {
+    background: #21293c;
+    color: white;
+    transition: ease-in-out;
+    box-shadow: 0 0 9px 1px #0e0e0e;
+}
+
+/*-------- footer --------*/
+footer {
+    background-color: #0c1524;
+    padding: 50px 60px 20px;
+}
+.row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20px;
+}
+.contact_iconn {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.location {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    width: 350px;
+}
+.ico {
+    width: 15px;
+    height: 15px;
+}
+.row a {
+    text-decoration: none;
+    color: white;
+}
+#columns li{
+    margin: 20px 0;
+}
+#columns p{
+    margin: 10px 0;
+}
+.arrow {
+    display: flex;
+    align-items: center;
+    gap: 5px
+}
+.works_arrow {
+    width: 15px;
+    height: 15px;
+}
+
+/*----- Responsiveness for tablet -----*/
+@media (max-width: 768px) {
+    .forth {
+        width: 744px;
+    }
+    .third {
+        grid-template-columns: 300px 300px;
+    }
+    .row {
+        gap: 10px;
+    }
+    .location {
+        width: 187px;
+    }
+    .fifth {
+        padding: 30px;
+    }
+    .review_icon {
+        margin-left: 21px;
+        margin-bottom: -73px;
+    }
+    footer {
+        padding: 50px 36px 20px;
+    }
+    .cart {
+        display: none;
+    }
+    .cart-icon {
+        display: none;
+    }
+}
+
+/*----- Responsiveness for Smartphone -----*/
+@media (max-width: 412px) {
+    .third {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+    .first_illus {
+        width: 350px;
+        height: 260px;
+        object-fit: cover;
+    }
+    .second {
+        width:380px;
+    }
+    .forth h4 {
+        font-size: 20px;
+    }
+    .forth {
+        display: grid;
+        width: 350px;
+        padding: 20px;
+    }
+    .text {
+        padding: 20px;
+    }
+    .arrow {
+        margin-top: -20px;
+    }
+    .fifth {
+        display: grid;
+    }
+    .review {
+        margin-bottom: 30px;
+    }
+    .sixth {
+        width: 300px;
+    }
+    .start input {
+        width: 230px;
+    }
+    .start button {
+        width: 270px;
+        margin-top: 20px;
+    }
+    .row {
+        display: grid;
+    }
+    .socials {
+        display: flex;
+        justify-content: center;
+    }
+    nav ul {
+        gap: 10px;
+        font-size: 15px;
+    }
+    .main-logo {
+        width: 100px
+    }
+    .location {
+        width: auto;
+    }
+}
+
+@media (max-width: 360px){
+    .second_illus {
+        width: 318px;
+        height: 283px;
+    }
+    .forth {
+        width: 278px;
+    }
+    .second {
+        width: 326px;
+    }
+    .second_illus {
+        width: 323px;
+        height: 279px;
+    }
+    .review {
+        width: 250px;
+    }
+    .sixth {
+        width: 271px;
+    }
+    nav {
+        padding: 24px;
+    }
+}
